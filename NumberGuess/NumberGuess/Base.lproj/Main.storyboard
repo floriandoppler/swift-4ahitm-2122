@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3E9-Sg-NVb">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Guess The Number-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NumberGuess" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,6 +21,7 @@
                                 <state key="normal" title="Click here 📍"/>
                                 <connections>
                                     <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qFq-m9-St2"/>
+                                    <segue destination="LIg-Fe-f1M" kind="show" id="Qyy-4g-KWr"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type in your number ..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="20r-nB-gxG">
@@ -41,7 +41,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93327885950612" green="0.96152114624255336" blue="0.99982494119999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="NMX-02-1Ij" firstAttribute="top" secondItem="20r-nB-gxG" secondAttribute="bottom" constant="20" id="5O3-IN-ysE"/>
                             <constraint firstItem="mZ3-Hv-dyj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Rp-Ed-SXT"/>
@@ -52,6 +52,7 @@
                             <constraint firstItem="mZ3-Hv-dyj" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="oFv-X2-dtQ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Guess The Number" id="yKe-zR-zgF"/>
                     <connections>
                         <outlet property="guessMeButton" destination="mZ3-Hv-dyj" id="iVB-Pf-4rH"/>
                         <outlet property="numberLabel" destination="NMX-02-1Ij" id="7mo-i6-OWW"/>
@@ -62,10 +63,37 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vDz-PR-Bqa">
+            <objects>
+                <navigationController id="3E9-Sg-NVb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AEk-YF-uso">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hbz-C3-jRa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Q3-Zs-exX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-651" y="94"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="QGg-ZJ-EUS">
+            <objects>
+                <viewController id="LIg-Fe-f1M" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kug-rM-VOW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="DT7-du-zkt"/>
+                        <color key="backgroundColor" red="1" green="0.94791927237769746" blue="0.94921736586525485" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detail" id="dRn-co-7Bc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dcn-cH-wbk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952" y="94"/>
+        </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

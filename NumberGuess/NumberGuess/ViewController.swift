@@ -44,6 +44,11 @@ class ViewController: UIViewController {
         print("Number to guess: \(model.numberToGuess)")
         // Do any additional setup after loading the view.
     }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        print("No!")
+        return false
+    }
 
 
 }

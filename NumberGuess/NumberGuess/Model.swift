@@ -36,6 +36,7 @@ class Model {
             }
         return result
     }
-    }
+        
+        return true
 }
-
+}
