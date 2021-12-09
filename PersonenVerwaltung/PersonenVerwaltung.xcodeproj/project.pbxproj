@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BAA5E79276237A3000BAD98 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAA5E77276237A3000BAD98 /* TableViewController.swift */; };
+		3BAA5E7B276237AD000BAD98 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAA5E7A276237AD000BAD98 /* Model.swift */; };
 		B854F05F2750CDBC000F0252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B854F05E2750CDBC000F0252 /* AppDelegate.swift */; };
 		B854F0612750CDBC000F0252 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B854F0602750CDBC000F0252 /* SceneDelegate.swift */; };
 		B854F0632750CDBC000F0252 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B854F0622750CDBC000F0252 /* ViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3BAA5E77276237A3000BAD98 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		3BAA5E7A276237AD000BAD98 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		B854F05B2750CDBC000F0252 /* PersonenVerwaltung.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonenVerwaltung.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B854F05E2750CDBC000F0252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B854F0602750CDBC000F0252 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +105,8 @@
 			children = (
 				B854F05E2750CDBC000F0252 /* AppDelegate.swift */,
 				B854F0602750CDBC000F0252 /* SceneDelegate.swift */,
+				3BAA5E77276237A3000BAD98 /* TableViewController.swift */,
+				3BAA5E7A276237AD000BAD98 /* Model.swift */,
 				B854F0622750CDBC000F0252 /* ViewController.swift */,
 				B854F0642750CDBC000F0252 /* Main.storyboard */,
 				B854F0672750CDC2000F0252 /* Assets.xcassets */,
@@ -260,6 +266,8 @@
 			files = (
 				B854F0632750CDBC000F0252 /* ViewController.swift in Sources */,
 				B854F05F2750CDBC000F0252 /* AppDelegate.swift in Sources */,
+				3BAA5E7B276237AD000BAD98 /* Model.swift in Sources */,
+				3BAA5E79276237A3000BAD98 /* TableViewController.swift in Sources */,
 				B854F0612750CDBC000F0252 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
